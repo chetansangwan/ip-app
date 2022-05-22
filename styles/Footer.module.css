@@ -1,0 +1,27 @@
+.footer {
+  background-color: #f5f6f3;
+  margin-top: calc(25px + 10 * (100vw - 320px) / 1080);
+}
+
+.footerarea {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 3vw 12vw;
+}
+.copyright {
+  background-color: #e9ebe7;
+  padding: 15px 0;
+  font-size: calc(11px + 2 * (100vw - 320px) / 1080);
+  text-align: center;
+}
+.copyright span {
+  color: #777;
+  line-height: 1.5;
+  padding-right: 15px;
+}
+
+.footerinfo {
+  width: 60%;
+}

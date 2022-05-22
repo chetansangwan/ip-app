@@ -1,9 +1,23 @@
+@font-face {
+  font-family: "gilroy";
+  src: url("../public/fonts/Gilroy-Medium.woff2");
+}
+@font-face {
+  font-family: "gilroy bold";
+  src: url("../public/fonts/Gilroy-Extrabold.woff2");
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  font-family: var(--def-font-1), var(--font-default);
+}
+:root {
+  --font-default: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  --def-font-1: "Gilroy";
+  --def-font-2: "Gilroy Bold";
 }
 
 a {
@@ -13,4 +27,55 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+button {
+  font-family: var(--def-font-2);
+  letter-spacing: 1px;
+  font-size: 14px;
+  border: none;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--def-font-2);
+  font-weight: bold;
+  display: inline-block;
+  background: linear-gradient(to right, #9e11d0, #ff3766, #ffab02);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 10px 25px rgb(214 21 154 / 20%);
+  font-size: calc(25px + 15 * (100vw - 320px) / 1080);
+}
+h3 {
+  font-size: calc(15px + 3 * (100vw - 320px) / 1080);
+}
+h4 {
+  font-variant-caps: all-small-caps;
+  letter-spacing: 2px;
+  margin: 2px 0;
+  font-size: calc(15px + 3 * (100vw - 320px) / 1080);
+}
+
+strong {
+  display: block;
+  font-size: 120%;
+}
+
+p {
+  font-size: calc(11px + 1 * (100vw - 320px) / 1080);
+  line-height: 1.5;
+  color: #7d778d;
+}
+ul {
+  font-size: 13px;
+  list-style-type: none;
+  color: #7d778d;
+  padding: 0;
+}
+li {
+  margin-top: 15px;
+  white-space: nowrap;
 }
